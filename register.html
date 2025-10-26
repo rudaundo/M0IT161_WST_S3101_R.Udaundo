@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - ZeroScope</title>
+    <link rel="stylesheet" href="register.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" slide>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <!-- Main Menu and Navigation -->
+     <nav class="menu">
+        <img src="image\creator.png" alt="game logo">
+        <p>|</p>
+        <a href="index.html">HOME</a>
+        <a href="" target="_blank">REGISTER</a>
+        <a href="" target="_blank">GAME INFO</a>
+        <select class="socials" id="OurSocials" onchange="if(this.value) window.open(this.value, '_blank'); this.selectedIndex = 0;">
+            <option value="" disabled selected>OUR SOCIALS</option>
+            <option value="https://www.facebook.com">FACEBOOK</option>
+            <option value="https://www.instagram.com">INSTAGRAM</option>
+            <option value="https://www.discord.com">DISCORD</option>
+            <option value="https://www.youtube.com">YOUTUBE</option>
+        </select>   
+        <a href="" target="_blank">MERCH</a>
+        <a href="" target="_blank">DOWNLOAD</a>
+        <a href="" target="_blank">CONTACT US</a>
+     </nav>
+
+     <!-- Background Image -->
+    <div class="background">
+        <img src="image\register-background.png" alt="Register Background" class="bgimage">
+    </div>
+    <form class="form-container">
+        <h2>ZeroScope Registration</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required placeholder="Enter your username" ><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter Password"><br><br>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm Password"><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

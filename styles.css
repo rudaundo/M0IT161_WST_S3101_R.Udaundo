@@ -1,0 +1,283 @@
+@media (min-width: 600px) and (max-width: 1024px) {
+body {
+    overflow-y: scroll;
+    cursor: pointer;
+}
+}
+
+/*Main Menu and Navigation*/
+@media (min-width: 100px) and (max-width: 1440px) {
+.menu {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 9999;
+}
+.menu a, .menu .socials, p {
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 5px;
+}
+
+.menu img {
+    position: relative;
+    display:block;
+    align-self: center;
+    max-height: 40px;
+    max-width: 100px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+.menu .socials {
+    border: 0px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.menu .socials:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 5px;
+}
+}
+
+/*Background Video*/
+@media (min-width: 100px) and (max-width: 1440px) {
+.video-section {
+   position: relative;
+   top: 60px;
+   left: 0px;
+   width: 100%;
+   height: 60vh;
+   overflow: hidden;
+}
+
+.video-section .bgvideo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.video-section p {
+    position: relative;
+    top: -95%;
+    left: 20%;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 5px 5px 5px gray;
+}
+
+.video-section img {
+    position: relative;
+    top: -90%;
+    left: 40%;
+    height: 200px;
+    width: auto;
+    z-index: 1;
+}
+
+.playforfree {
+    position:relative;
+    top: -95%;
+    left: 42%;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    opacity: 0.7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 3px 3px 3px black;
+    background-color: red;
+    cursor: pointer;
+}
+}
+
+/*NEWS and UPDATES*/
+#news {
+    position: relative;
+    top: 8vh;
+    font-weight: bold;
+    font-size: 45px;
+    font-family:Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    text-shadow: 5px 5px 5px gray;
+    color: black;
+}
+
+@media (min-width: 100px) and (max-width: 1440px) {
+.updates {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    top: 5vh;
+    width: 100%;
+}
+
+    .updates p {
+        position: relative;
+        padding: 15px;
+        margin: 8px;
+        max-width: 400px;
+        min-width: 300px;
+        color: black;
+        white-space: wrap;
+        font-size: 16px;
+        font-weight: normal;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .updates li {
+        position: relative;
+        padding: 5px;
+        margin: 5px 0px 0px 20px;
+    }
+
+    .custom-list li::marker {
+        content: "❂ ";
+        color: red;
+    }
+
+    .image-container {
+        position: relative;
+        justify-content: space-evenly;
+        width: 400px;
+        height: 200px;
+        margin: 20px;
+        overflow: hidden;
+        box-shadow: 10px 5px 10px greenyellow;
+    }
+    
+    .image-container img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.2s ease;
+    }
+
+    .image-container:hover img {
+        transform: scale(1.15);
+    }
+}
+
+/*New Hero*/
+@media (min-width: 100px) and (max-width: 1440px) {
+.newhero-container {
+    position: relative;
+    top: 5vh;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
+
+.newhero-container img {
+    object-fit: contain;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.newhero-container #watchnow {
+    position: absolute;
+    border-radius: 10px;
+    min-width: 20%;
+    height: 30px;
+    opacity: 0.7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 12px;
+    box-shadow: 3px 3px 3px black;
+    background-color: red;
+    bottom: 35%;
+    left: 9vw;
+    cursor: pointer;
+}
+}
+
+/*Footer*/
+@media (min-width: 100px) and (max-width: 1440px) {
+footer {
+    position: relative;
+    top: 10vh;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    background-color: black;
+    color: white;
+}
+    footer .social-icons {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    footer .creator-logo {
+        position: relative;
+        left: 46%;
+        max-width: 10%;
+        height: auto;
+    }
+
+    footer .copyright {
+        position: relative;
+        text-align: center;
+        font-size: clamp(12px, 2vw, 16px);
+        padding: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    footer .agreement {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        font-size: clamp(12px, 2vw, 16px);
+        cursor: pointer;
+    }
+
+    footer a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 5px;
+    }
+
+}

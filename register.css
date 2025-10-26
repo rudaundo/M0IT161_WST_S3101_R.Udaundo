@@ -1,0 +1,130 @@
+@media (min-width: 100px) and (max-width: 1024px) {
+body {
+    overflow-y: scroll;
+    cursor: pointer;
+}
+}
+
+/*Main Menu and Navigation*/
+@media (min-width: 100px) and (max-width: 1440px) {
+.menu {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 9999;
+}
+.menu a, .menu .socials, p {
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 5px;
+}
+
+.menu img {
+    position: relative;
+    display:block;
+    align-self: center;
+    max-height: 40px;
+    max-width: 100px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+.menu .socials {
+    border: 0px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.menu .socials:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 5px;
+}
+}
+
+/*Background Image Section*/
+    .background {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: calc(100px-50px);
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -1;}
+
+    .background .bgimage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/*Registration form*/
+@media (min-width: 100px) and (max-width: 1440px) {
+.form-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 70px;
+    left: 25%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.form-container label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form-container input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-container button {
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(255,0,0,0.6);
+    color: black;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+}
