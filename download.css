@@ -127,7 +127,9 @@ body {
 
 .download-sites {
     position: relative;
-    top: 10vh;
+    top: -60vh;
+    left: 40%;
+    max-width: 50%;
 }
 
     .download-sites .site-logo {
@@ -135,6 +137,12 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+
+    .download-sites p {
+        color: blue;
+        font-size: 24px;
+        text-align: center;
     }
 
 
