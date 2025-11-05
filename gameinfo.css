@@ -1,12 +1,13 @@
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 480px) {
+
 body {
+    margin: 0 auto;
+    padding: 0;
     overflow-y: scroll;
-    cursor: pointer;
-}
 }
 
+
 /*Main Menu and Navigation*/
-@media (min-width: 100px) and (max-width: 1440px) {
 .menu {
     position: fixed;
     display: flex;
@@ -15,6 +16,7 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     background-color: black;
+    min-width: 100%;
     width: 100%;
     height: auto;
     top: 0;
@@ -22,7 +24,7 @@ body {
     cursor: pointer;
     z-index: 9999;
 }
-.menu a, .menu .socials, p {
+.menu a, .socials, p {
     position: relative;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13px;
@@ -43,10 +45,9 @@ body {
     position: relative;
     display:block;
     align-self: center;
-    max-height: 40px;
-    max-width: 100px;
+    max-width: 10%;
+    width: 10%;
     height: auto;
-    width: auto;
     object-fit: contain;
 }
 
@@ -54,13 +55,6 @@ body {
     border: 0px;
     background-color: black;
     cursor: pointer;
-}
-
-.menu .socials:hover {
-    text-decoration: underline;
-    text-decoration-color: white;
-    text-decoration-thickness: 5px;
-}
 }
 
 /*Game Info Content*/
@@ -93,13 +87,14 @@ body {
     text-align: center;
     margin: 0;
     font-size: 36px;
+    white-space: nowrap;
 }
 
 .gameinfo-container .content {
     position: relative;
-    top: 80px;
-    left: 20px;
-    width: 100%;
+    top: 10vh;
+    left: 2%;
+    width: 90%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: bold;
@@ -115,6 +110,8 @@ body {
     white-space: wrap;
     font-size: 18px;
     font-weight: normal;
+    left: 5%;
+    text-align: center;
 }
 
 .gameinfo-container .content li  {
@@ -127,12 +124,11 @@ body {
 }
 
 /*Footer*/
-@media (min-width: 100px) and (max-width: 1440px) {
 footer {
     position: relative;
-    top: 30vh;
+    top: 25vh;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
     background-color: black;
     color: white;

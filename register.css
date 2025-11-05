@@ -1,12 +1,13 @@
-@media (min-width: 100px) and (max-width: 1024px) {
+@media (min-width: 480px) {
+
 body {
+    margin: 0 auto;
+    padding: 0;
     overflow-y: scroll;
-    cursor: pointer;
-}
 }
 
+
 /*Main Menu and Navigation*/
-@media (min-width: 100px) and (max-width: 1440px) {
 .menu {
     position: fixed;
     display: flex;
@@ -15,6 +16,7 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     background-color: black;
+    min-width: 100%;
     width: 100%;
     height: auto;
     top: 0;
@@ -22,7 +24,7 @@ body {
     cursor: pointer;
     z-index: 9999;
 }
-.menu a, .menu .socials, p {
+.menu a, .socials, p {
     position: relative;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13px;
@@ -43,10 +45,9 @@ body {
     position: relative;
     display:block;
     align-self: center;
-    max-height: 40px;
-    max-width: 100px;
+    max-width: 10%;
+    width: 10%;
     height: auto;
-    width: auto;
     object-fit: contain;
 }
 
@@ -56,18 +57,11 @@ body {
     cursor: pointer;
 }
 
-.menu .socials:hover {
-    text-decoration: underline;
-    text-decoration-color: white;
-    text-decoration-thickness: 5px;
-}
-}
-
 /*Background Image Section*/
     .background {
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
+        position: absolute;
+        width: 100%;
+        height: auto;
         top: calc(100px-50px);
         top: 0;
         left: 0;
@@ -81,7 +75,7 @@ body {
     }
 
 /*Registration form*/
-@media (min-width: 100px) and (max-width: 1440px) {
+
 .form-container {
     position: relative;
     display: flex;
@@ -126,5 +120,60 @@ body {
     cursor: pointer;
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+/*Footer*/
+footer {
+    position: relative;
+    top: 15vh;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+}
+    footer .social-icons {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    footer .creator-logo {
+        position: relative;
+        left: 46%;
+        max-width: 10%;
+        height: auto;
+    }
+
+    footer .copyright {
+        position: relative;
+        text-align: center;
+        font-size: clamp(12px, 2vw, 16px);
+        padding: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    footer .agreement {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        font-size: clamp(12px, 2vw, 16px);
+        cursor: pointer;
+    }
+
+    footer a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 5px;
+    }
+
 }
 }
