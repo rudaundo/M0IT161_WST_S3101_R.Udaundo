@@ -36,7 +36,7 @@ Add shop checkout or payment integration
 
 Include a Dark/Light Mode toggle
 
-👨‍💻 Developer
+**Developer**
 
 Jae Games Studio
 Created by: Russsell Jae Udaundo
