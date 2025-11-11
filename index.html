@@ -45,6 +45,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">REGISTER</a></li>
                     <li class="nav-item"><a class="nav-link" href="gameinfo.html">GAME INFO</a></li>
                     <select class="nav-link" id="OurSocials"
                         onchange="if(this.value) window.open(this.value, '_blank'); this.selectedIndex = 0;">
@@ -65,7 +66,7 @@
     <!-- Video and play for free button -->
     <section class="position-relative" style="height:100vh; overflow:hidden;">
 
-        <video autoplay muted loop class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" id="bgvideo">
+        <video autoplay muted loop playsinline class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="pointer-events: none;" id="bgvideo">
             <source src="videos/bgvideo.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
