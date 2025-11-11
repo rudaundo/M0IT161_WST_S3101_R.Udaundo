@@ -1,283 +1,416 @@
-@media (min-width: 480px) {
-
+/* ===============================
+   GLOBAL STYLES
+================================= */
 body {
-    margin: 0 auto;
-    padding: 0;
-    overflow-y: scroll;
-}
-
-
-/*Main Menu and Navigation*/
-
-.menu {
-    position: fixed;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
     background-color: black;
-    min-width: 100%;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    z-index: 9999;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #fff;
+    overflow-x: hidden;
 }
 
-    .menu a, .socials, p {
-        position: relative;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 13px;
-        font-weight: bold;
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-        white-space: nowrap;
-    }
-
-    .menu a:hover {
-        text-decoration: underline;
-        text-decoration-color: white;
-        text-decoration-thickness: 5px;
-    }
-
-    .menu img {
-        position: relative;
-        display:block;
-        align-self: center;
-        max-width: 10%;
-        width: 10%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .menu .socials {
-        border: 0px;
-        background-color: black;
-        cursor: pointer;
-    }
-
-
-/*Background Video*/
-.video-section {
-   position: relative;
-   top: 9vh;
-   left: 0px;
-   width: 100%;
-   height: 60vh;
-   margin: 0;
-   padding: 0;
+html {
+    scroll-behavior: smooth;
 }
 
-.video-section .bgvideo {
+/* ===============================
+   NAVIGATIONAL BAR
+================================= */
+
+.navbar {
+    background-color: #111;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand img {
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+.nav-link {
+    color: #fff !important;
+    margin: 0 8px;
+    transition: 0.3s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: red !important;
+}
+
+.navbar .socials {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 0px;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-opt {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 0px;
+    color: white;
+    font-size: 16px;
+}
+
+/* ===============================
+   HERO SECTION
+================================= */
+#bgvideo {
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+section.position-relative {
     position: relative;
-    display: flex;
-    justify-content: center;
+}
+
+section .bg-dark.opacity-50 {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+section p.lead {
+    font-size: 2rem;
+    color: #f5f5f5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section .font {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+section .btn {
+    border-radius: 50px;
+    padding: 12px 28px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+section .btn-primary:hover {
+    background-color: #009ac9;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
+}
+
+section .btn-outline-light:hover {
+    background-color: #00bfff;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+
+.btn-primary {
+    background-color: #00bfff;
+    border: none;
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #009ac9;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
+}
+
+.btn-outline-light {
+    border: 2px solid #00bfff;
+    color: #00bfff;
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #00bfff;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
+}
+
+/* ===============================
+   NEWS and UPDATES
+================================= */
+
+.card {
+    background-color: #111;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 191, 255, 0.2);
+}
+
+.card-title {
+    color: #00bfff;
+    font-weight: 600;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+/* ===============================
+   NEW HERO SECTION
+================================= */
+
+.new-hero-section {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0.7;
-}
-
-.video-section p {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: -57vh;
-    width: 100%;
-    font-weight: bold;
-    font-size: 16px;
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 5px 5px 5px gray;
-}
-
-.video-section img {
-    position: relative;
-    display: flex;
-    top: -57vh;
-    left: 38%;
-    width: 25%;
-    height: auto;
+    background-size: cover;
+    background-position: center;
     z-index: 1;
+    filter: brightness(1);
 }
 
-.playforfree {
-    position:relative;
-    top: -57vh;
-    left: 42%;
-    border-radius: 10px;
-    width: 200px;
-    height: 40px;
-    opacity: 0.7;
+.hero-overlay {
+    position: relative;
+    z-index: 2; /* must be above the hero-bg */
+    height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 16px;
-    box-shadow: 3px 3px 3px black;
-    background-color: red;
-    cursor: pointer;
+    left: -60%;
+    top: 10%;
 }
 
-
-/*NEWS and UPDATES*/
-#news {
-    position: relative;
-    top: 8vh;
-    font-weight: bold;
-    font-size: 45px;
-    font-family:Arial, Helvetica, sans-serif;
-    white-space: nowrap;
-    text-shadow: 5px 5px 5px gray;
-    color: black;
-}
-
-.updates {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    top: 5vh;
-    width: 100%;
-    cursor: pointer;
-}
-
-    .updates p {
-        position: relative;
-        text-align: justify;
-        padding: 0;
-        margin: 10px;
-        max-width: 90%;
-        min-width: 90%;
-        color: black;
-        white-space: wrap;
-        font-size: 16px;
-        font-weight: normal;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }    
-
-    .updates li {
-        position: relative;
-        padding: 5px;
-        margin: 5px 0px 0px 20px;
-    }
-
-    .custom-list li::marker {
-        content: "❂ ";
-        color: red;
-    }
-
-.image-container {
-    position: relative;
-    justify-content: space-evenly;
-    width: 90%;
-    height: auto;
-    margin-bottom: 40px;
-    margin-left: 10px;;
-    overflow: hidden;
-    box-shadow: 10px 5px 10px greenyellow;
-}
-    
-    .image-container img {
-        object-fit: contain;
-        width: 100%;
-        height: 100%;
-        transition: transform 0.2s ease;
-    }
-
-    .image-container:hover img {
-        transform: scale(1.15);
-    }
-
-/*New Hero*/
-.newhero-container {
-    position: relative;
-    top: 9vh;
-    left: 0;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
-
-    .newhero-container img {
-        object-fit: contain;
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    .newhero-container #watchnow {
-        position: absolute;
-        border-radius: 10px;
-        min-width: 20%;
-        height: 30px;
-        opacity: 0.7;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: bold;
-        font-size: 12px;
-        box-shadow: 3px 3px 3px black;
-        background-color: red;
-        bottom: 40%;
-        left: 9vw;
-        cursor: pointer;
-    }
-
-/*Footer*/
+/* ===============================
+   FOOTER STYLING
+================================= */
 footer {
-    position: relative;
-    top: 10vh;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background-color: black;
-    color: white;
+    background-color: #111;
+    color: #fff;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 30px 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-top: 1px solid #333;
 }
-    footer .social-icons {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding: 20px;
-    }
 
-    footer .creator-logo {
-        position: relative;
-        left: 46%;
-        max-width: 10%;
-        height: auto;
-    }
+footer p {
+    font-size: 0.85rem;
+    margin: 5px 0;
+}
 
-    footer .copyright {
-        position: relative;
-        text-align: center;
-        font-size: clamp(12px, 2vw, 16px);
-        padding: 10px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        white-space: nowrap;
-        font-weight: bold;
-    }
-
-    footer .agreement {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding: 10px;
-        font-size: clamp(12px, 2vw, 16px);
-        cursor: pointer;
-    }
-
-    footer a:hover {
+footer a:hover {
+    color: #00bfff !important;
     text-decoration: underline;
-    text-decoration-color: white;
-    text-decoration-thickness: 5px;
+}
+
+footer img {
+    transition: transform 0.3s ease;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+footer .social-icons {
+    margin-bottom: 15px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.2);
+}
+
+footer .creator-logo {
+    width: 200px;
+    margin: 15px 0;
+}
+
+footer .agreement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.8rem;
+    margin: 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+footer .agreement p:hover {
+    color: #00bfff;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================= */
+@media (max-width: 768px) {
+    .navbar-brand span {
+        font-size: 1rem;
     }
 
+    h1.display-4 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* ===============================
+   REGISTRATION FORM
+================================= */
+
+.register-hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.register-hero .hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+/* ===== FORM OVERLAY ===== */
+.form-overlay {
+  position: relative;
+  z-index: 2;
+  width: 40%;
+  margin-left: 5%; /* pushes to the right side */
+  margin-right: auto;
+  backdrop-filter: blur(8px);
+  background-color: rgba(20, 20, 20, 0.85);
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.form-overlay h2 {
+  color: #0dcaf0;
+  font-weight: bold;
+}
+
+.form-control {
+  background-color: #222;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #888;
+}
+
+.form-control:focus {
+  background-color: #1a1a1a;
+  border-color: #0dcaf0;
+  box-shadow: 0 0 5px rgba(13, 202, 240, 0.4);
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #0dcaf0;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0bb8d0;
+  transform: scale(1.03);
+}
+
+/* ===============================
+   MERCHANDISE
+================================= */
+
+main {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Section Headings */
+main h1 {
+    color: #ffffff;
+}
+main h2 {
+  color: #ffc107;
+  text-shadow: 0 0 10px rgba(255, 193, 7, 0.4);
+}
+
+.merch-hero {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.merch-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.1);
+  margin: 0;
+}
+
+/* Merch image */
+img.item1,
+main img {
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+/* Content paragraphs */
+main p {
+  color: #ccc;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Shop logos */
+.shops-logo img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.shops-logo img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }

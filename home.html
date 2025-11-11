@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ZeroScope</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" slide>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!-- Main Menu and Navigation -->
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+                <img src="image/creator.png" alt="ZeroScope Logo"
+                    style="height: 40px; width: auto; margin-right: 10px;">
+            </a>
+
+            <p style="font-size: 24px;" class="d-none d-lg-block">|</p>
+            <a class="navbar-brand fw-bold d-none d-lg-block" href="home.html">HOME</a>
+            <a class="navbar-brand fw-bold d-none d-lg-block" href="register.html">REGISTER</a>
+            <a class="navbar-brand fw-bold d-none d-lg-block" href="gameinfo.html">GAME INFO</a>
+
+            <select class="socials fw-bold d-none d-lg-block" id="OurSocials"
+                onchange="if(this.value) window.open(this.value, '_blank'); this.selectedIndex = 0;">
+                <option value="" disabled selected>OUR SOCIALS</option>
+                <option class="navbar-brand fw-bold" value="https://www.facebook.com">FACEBOOK</option>
+                <option class="navbar-brand fw-bold" value="https://www.instagram.com">INSTAGRAM</option>
+                <option class="navbar-brand fw-bold" value="https://www.discord.com">DISCORD</option>
+                <option class="navbar-brand fw-bold" value="https://www.youtube.com">YOUTUBE</option>
+            </select>
+
+            <a class="navbar-brand fw-bold d-none d-lg-block" href="merch.html">MERCH</a>
+            <a class="navbar-brand fw-bold d-none d-lg-block" href="download.html">DOWNLOAD</a>
+
+            <!--Burger Menu-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gameinfo.html">GAME INFO</a></li>
+                    <select class="nav-link" id="OurSocials"
+                        onchange="if(this.value) window.open(this.value, '_blank'); this.selectedIndex = 0;">
+                        <option value="" disabled selected>OUR SOCIALS</option>
+                        <option class="nav-opt" value="https://www.facebook.com">FACEBOOK</option>
+                        <option class="nav-opt" value="https://www.instagram.com">INSTAGRAM</option>
+                        <option class="nav-opt" value="https://www.discord.com">DISCORD</option>
+                        <option class="nav-opt" value="https://www.youtube.com">YOUTUBE</option>
+                    </select>
+                    <li class="nav-item"><a class="nav-link" href="merch.html">MERCH</a></li>
+                    <li class="nav-item"><a class="nav-link" href="download.html">DOWNLOAD</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Video and play for free button -->
+    <section class="position-relative" style="height:100vh; overflow:hidden;">
+
+        <video autoplay muted loop class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" id="bgvideo">
+            <source src="videos/bgvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+        <div
+            class="position-relative d-flex flex-column justify-content-center align-items-center text-center text-light h-100">
+            <img src="image\logo.png" alt="ZeroScope Logo" class="mb-3" style="width:300px;">
+            <p class="lead mb-4">An immersive FPV gaming experience beyond limits.</p>
+            <div>
+                <a href="register.html" class="font btn btn-primary btn-lg me-2">Play for Free</a>
+                <a href="gameinfo.html" class="font btn btn-outline-light btn-lg">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News and Updates -->
+    <section class="py-5 bg-dark text-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">NEWS & UPDATES</h2>
+            <div class="row g-4">
+
+                <!-- Update 1 -->
+                <div class="col-md-4">
+                    <div class="card bg-secondary text-light h-100">
+                        <img src="image/event1.png" class="card-img-top" alt="Event 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Weapon System Overhaul</h5>
+                            <p class="card-text">
+                                We have listened to your feedback and completely reworked the weapon recoil and aiming
+                                system for tighter, more realistic control.
+                            </p>
+                            <ul>
+                                <li>Enhanced recoil & scope control</li>
+                                <li>Adjustable field of view (FOV)</li>
+                                <li>New training mode: Zero Range</li>
+                                <li>Updated HUD with live targeting feed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Update 2 -->
+                <div class="col-md-4">
+                    <div class="card bg-secondary text-light h-100">
+                        <img src="image/event2.png" class="card-img-top" alt="Event 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Vanguard Uprising</h5>
+                            <p class="card-text">
+                                A new chapter introducing elite enemy units and aerial FPV drones for reconnaissance.
+                                Expanded battlefields and real-time drone control.
+                            </p>
+                            <ul>
+                                <li>New storyline missions & cutscenes</li>
+                                <li>Controllable FPV drones</li>
+                                <li>Expanded multiplayer arena: Outpost V</li>
+                                <li>Weapon skins and visual upgrades</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Update 3 -->
+                <div class="col-md-4">
+                    <div class="card bg-secondary text-light h-100">
+                        <img src="image/event3.png" class="card-img-top" alt="Event 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Operation Ghostline</h5>
+                            <p class="card-text">
+                                Navigate through abandoned industrial zones under low-light conditions where stealth is
+                                key. Includes new thermal vision mechanics and AI updates.
+                            </p>
+                            <ul>
+                                <li>New stealth mechanics</li>
+                                <li>Thermal vision & silenced weapons</li>
+                                <li>Dynamic enemy AI</li>
+                                <li>Night combat visuals</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Hero Section -->
+    <section class="new-hero-section position-relative text-center text-light">
+        <!-- Background Image -->
+        <div class="hero-bg" style="background-image: url('image/NEW_HERO_AKIRA.png');"></div>
+
+        <!-- Overlay content -->
+        <div class="hero-overlay d-flex justify-content-end align-items-center text-center">
+            <div class="d-flex flex-column flex-md-row gap-3">
+                <a href="https://www.youtube.com" target="_blank" class="btn btn-primary btn-lg">Watch Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="image/facebook.jpg" alt="Facebook" class="img-fluid" style="max-width: 60px;">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="image/instagram.jpg" alt="Instagram" class="img-fluid" style="max-width: 60px;">
+            </a>
+            <a href="https://www.discord.com" target="_blank">
+                <img src="image/discord.jpg" alt="Discord" class="img-fluid" style="max-width: 60px;">
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="image/youtube.jpg" alt="YouTube" class="img-fluid" style="max-width: 60px;">
+            </a>
+        </div>
+        <img class="creator-logo img-fluid" src="image/creator.png" alt="Jae Games Studio Logo">
+        <p class="copyright">
+            © 2025 ZeroScope, Jae Games Studio and any associated logos are trademarks, service marks, and/or registered
+            trademarks of Jae Games Studio.
+        </p>
+        <div class="agreement">
+            <p>Privacy Notice</p>
+            <p>Terms of Service</p>
+            <p>Cookie Policy</p>
+            <p>Company Information</p>
+        </div>
+    </footer>
+
+</html>
