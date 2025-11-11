@@ -18,12 +18,12 @@ JavaScript (Bootstrap Bundle) — for dropdowns, toggles, and navigation
 
 **Features**
 
-> Responsive navigation bar with dropdowns and burger menu
-> Game information and description section
-> Player registration page
-> Download links for the game
-> Merchandise section linked to online stores (Lazada, Shopee, Zalora, Amazon)
-> Custom footer with social media links
++ Responsive navigation bar with dropdowns and burger menu
++ Game information and description section
++ Player registration page
++ Download links for the game
++ Merchandise section linked to online stores (Lazada, Shopee, Zalora, Amazon)
++ Custom footer with social media links
 
 
 **Future Improvements**
