@@ -1,77 +1,145 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>ZeroScope</title>
-    <link rel="stylesheet" href="download.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" slide>
     <meta charset="UTF-8">
 </head>
+
 <body>
-     <!-- Main Menu and Navigation -->
-     <nav class="menu">
-        <img src="image\creator.png" alt="game logo">
-        <p>|</p>
-        <a href="index.html">HOME</a>
-        <a href="register.html">REGISTER</a>
-        <a href="gameinfo.html">GAME INFO</a>
-        <select class="socials" id="OurSocials" onchange="if(this.value) window.open(this.value, '_blank'); this.selectedIndex = 0;">
-            <option value="" disabled selected>OUR SOCIALS</option>
-            <option value="https://www.facebook.com">FACEBOOK</option>
-            <option value="https://www.instagram.com">INSTAGRAM</option>
-            <option value="https://www.discord.com">DISCORD</option>
-            <option value="https://www.youtube.com">YOUTUBE</option>
-        </select>   
-        <a href="merch.html" target="_blank">MERCH</a>
-        <a href="download.html" target="_blank">DOWNLOAD</a>
-        <a href="" target="_blank">CONTACT US</a>
-     </nav>
+    <!-- Main Menu and Navigation -->
+    <nav class="navbar navbar-dark fixed-top" style="background-color: black;">
+        <div class="container">
 
-     <!-- Download Content -->
-    <div class="download-container">
-        <div class="header">
-        <h1>ZeroScope Download</h1>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="image/creator.png" alt="ZeroScope Logo"
+                    style="height: 40px; width: auto; margin-right: 10px;">
+            </a>
+
+            <p style="font-size: 24px;" class="d-none d-lg-block">|</p>
+            <a class="navbar-brand fw-bold d-none d-lg-block" href="index.html">HOME</a>
+            <a class="navbar-brand fw-bold d-none d-lg-block" href="register.html">REGISTER</a>
+            <a class="navbar-brand fw-bold d-none d-lg-block" href="gameinfo.html">GAME INFO</a>
+
+            <select class="socials fw-bold d-none d-lg-block" id="OurSocials"
+                onchange="if(this.value) window.open(this.value, '_blank'); this.selectedIndex = 0;">
+                <option value="" disabled selected>OUR SOCIALS</option>
+                <option class="navbar-brand fw-bold" value="https://www.facebook.com">FACEBOOK</option>
+                <option class="navbar-brand fw-bold" value="https://www.instagram.com">INSTAGRAM</option>
+                <option class="navbar-brand fw-bold" value="https://www.discord.com">DISCORD</option>
+                <option class="navbar-brand fw-bold" value="https://www.youtube.com">YOUTUBE</option>
+            </select>
+
+            <a class="navbar-brand fw-bold d-none d-lg-block" href="merch.html">MERCH</a>
+            <a class="navbar-brand fw-bold d-none d-lg-block" href="download.html">DOWNLOAD</a>
+
+            <!--Burger Menu-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="z-index: 9999;">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">REGISTER</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gameinfo.html">GAME INFO</a></li>
+                    <select class="nav-link" id="OurSocials"
+                        onchange="if(this.value) window.open(this.value, '_blank'); this.selectedIndex = 0;">
+                        <option value="" disabled selected>OUR SOCIALS</option>
+                        <option class="nav-opt" value="https://www.facebook.com">FACEBOOK</option>
+                        <option class="nav-opt" value="https://www.instagram.com">INSTAGRAM</option>
+                        <option class="nav-opt" value="https://www.discord.com">DISCORD</option>
+                        <option class="nav-opt" value="https://www.youtube.com">YOUTUBE</option>
+                    </select>
+                    <li class="nav-item"><a class="nav-link" href="merch.html">MERCH</a></li>
+                    <li class="nav-item"><a class="nav-link" href="download.html">DOWNLOAD</a></li>
+                </ul>
+            </div>
+
         </div>
+    </nav>
 
-    <div class="requirements">
-    <h2>System Requirements</h2>
-        <h3>💡 Minimum :</h3>
-         <ul>
-            <li>OS: Windows 10 or later</li>
-            <li>Processor: Intel Core i3 or equivalent</li>
-            <li>Memory: 4GB RAM</li>
-            <li>Graphics: Integrated GPU with DirectX 11 support</li>
-            <li>Storage: 1GB available space</li>
-         </ul>
-         <h3>🔥 Recommended :</h3>
-         <ul>
-            <li>OS: Windows 10/11</li>
-            <li>Processor: Intel Core i5 or higher</li>
-            <li>Memory: 8GB RAM</li>
-            <li>Graphics: Dedicated GPU</li>
-            <li>Storage: 2GB available space</li>
-         </ul>
+    <!-- System Requirements -->
+
+    <section class="merch-hero position-fixed text-center py-3 w-100" style="z-index: 1; top:7vh">
+        <div class="container-fluid">
+            <h1 class="display-4 fw-bold merch-title">Game Download - Zero Scope</h1>
+        </div>
+    </section>
+
+    <main class="container py-5" style="margin-top: 150px;">
+    <div class="row mb-5" style="top: 150px;">
+        <div class="col-md-6 mb-3">
+            <h2 class="fw-bold mb-3">💡 Minimum Requirements</h2>
+            <ul class="list-group list-group-flush ms-5">
+                <li class="list-group-item">OS: Windows 10 or later</li>
+                <li class="list-group-item">Processor: Intel Core i3 or equivalent</li>
+                <li class="list-group-item">Memory: 4GB RAM</li>
+                <li class="list-group-item">Graphics: Integrated GPU with DirectX 11 support</li>
+                <li class="list-group-item">Storage: 1GB available space</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h2 class="fw-bold mb-3">🔥 Recommended Requirements</h2>
+            <ul class="list-group list-group-flush ms-5">
+                <li class="list-group-item">OS: Windows 10/11</li>
+                <li class="list-group-item">Processor: Intel Core i5 or higher</li>
+                <li class="list-group-item">Memory: 8GB RAM</li>
+                <li class="list-group-item">Graphics: Dedicated GPU</li>
+                <li class="list-group-item">Storage: 2GB available space</li>
+            </ul>
         </div>
     </div>
 
-    <div class="download-sites">
-        <p>Download Sites :</p>
-        <ul class="site-logo">
-            <a href="https:www.mediafire.com" target="_blank"><img src="image\mediafire.png" alt="Mediafire Logo" height="auto" width="200px"></a>
-            <a href="https:www.mega.nz" target="_blank"><img src="image\mega.png" alt="Mega.nz Logo" height="auto" width="200px"></a>
-            <a href="https:www.softonic.com" target="_blank"><img src="image\softonic.png" alt="Softonic Logo" height="auto" width="200px"></a>
-        </ul>
+    <!-- Download Sites -->
+    <div class="text-center">
+        <p class="fw-bold mb-3" style="color: black; font-size: 24px;">Download Sites:</p>
+        <div class="row justify-content-center g-3">
+            <div class="col-6 col-md-3">
+                <a href="https://www.mediafire.com" target="_blank">
+                    <img src="image/mediafire.png" alt="Mediafire Logo" class="img-fluid rounded shadow" style="width: auto; height: 50px;">
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="https://www.mega.nz" target="_blank">
+                    <img src="image/mega.png" alt="Mega.nz Logo" class="img-fluid rounded shadow" style="width: auto; height: 50px;">
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="https://www.softonic.com" target="_blank">
+                    <img src="image/softonic.png" alt="Softonic Logo" class="img-fluid rounded shadow" style="width: auto; height: 50px;">
+                </a>
+            </div>
+        </div>
     </div>
-
+    </div>
+    </main>
 </body>
+
 <footer>
     <div class="social-icons">
-    <a href="https://www.facebook.com" target="_blank"><img src="image\facebook.jpg" alt="facebook_logo" height="auto" width="50px"></a>
-    <a href="https://www.instagram.com" target="_blank"><img src="image\instagram.jpg" alt="instagram_logo" height="auto" width="50px"></a>
-    <a href="https://www.discord.com" target="_blank"><img src="image\discord.jpg" alt="discord_logo" height="auto" width="45px"></a>
-    <a href="https://www.youtube.com" target="_blank"><img src="image\youtube.jpg" alt="youtube_logo" height="auto" width="45px"></a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="image/facebook.jpg" alt="Facebook" class="img-fluid" style="max-width: 60px;">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="image/instagram.jpg" alt="Instagram" class="img-fluid" style="max-width: 60px;">
+        </a>
+        <a href="https://www.discord.com" target="_blank">
+            <img src="image/discord.jpg" alt="Discord" class="img-fluid" style="max-width: 60px;">
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="image/youtube.jpg" alt="YouTube" class="img-fluid" style="max-width: 60px;">
+        </a>
     </div>
-    <img class="creator-logo" src="image\creator.png" alt="Jae Games Studio Logo">
-    <p class="copyright">© 2025 ZeroScope, Jae Games Studio and any associated logos are trademarks, service marks, and/or registered trademarks of Jae Games Studio.</p>
+    <img class="creator-logo img-fluid" src="image/creator.png" alt="Jae Games Studio Logo">
+    <p class="copyright">
+        © 2025 ZeroScope, Jae Games Studio and any associated logos are trademarks, service marks, and/or registered
+        trademarks of Jae Games Studio.
+    </p>
     <div class="agreement">
         <p>Privacy Notice</p>
         <p>Terms of Service</p>
@@ -79,4 +147,5 @@
         <p>Company Information</p>
     </div>
 </footer>
+
 </html>
