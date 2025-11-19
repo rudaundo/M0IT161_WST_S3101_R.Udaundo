@@ -4,7 +4,9 @@ Github Repo: https://github.com/rudaundo/M0IT161_WST_S3101_R.Udaundo
 
 Github Page: https://rudaundo.github.io/M0IT161_WST_S3101_R.Udaundo/
 
-Video Link:
+Video Link: https://drive.google.com/file/d/1anO-gMS7e745jzQTKuQLOgqe9iVYP04v/view?usp=sharing
+
+Project Folder: https://drive.google.com/drive/folders/1dzBGEf57HraEKye0eDx7JpYxQIsmTXS9?usp=sharing
 
 
 
