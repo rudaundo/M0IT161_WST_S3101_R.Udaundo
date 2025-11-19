@@ -1,4 +1,12 @@
-ZeroScope Web Application
+**ZeroScope Web Application**
+
+Github Repo: https://github.com/rudaundo/M0IT161_WST_S3101_R.Udaundo
+
+Github Page: https://rudaundo.github.io/M0IT161_WST_S3101_R.Udaundo/
+
+Video Link:
+
+
 
 **Overview**
 
